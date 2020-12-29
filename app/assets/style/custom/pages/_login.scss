@@ -1,0 +1,8 @@
+.img-login {
+    height: 730px;
+    background-position: center;
+
+    @include mobile {
+        height: 220px;
+    }
+}

@@ -1,0 +1,9 @@
+// 圓角按鈕樣式
+.btn-pill {
+  width: 350px;
+  line-height: 42px;
+
+  @include mobile {
+    width: 100%;
+  }
+}

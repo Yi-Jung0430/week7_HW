@@ -1,0 +1,68 @@
+.img-chanel,
+.img-gingembre,
+.img-n5 {
+    height: 555px;
+}
+
+.img-detail {
+  height: 1080px;
+  background-position: center 0;
+}
+
+.card-img {
+  height: 540px;
+}
+
+.card-cover {
+  position: relative;
+  &:before {
+    content: 'Sold out';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(#000, .3);
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.bottle-img {
+  height: 520px;
+}
+
+.subscribe-img {
+  height: 600px;
+  background-position: center;
+}
+
+.subscribe {
+  padding-top: 312px;
+  &__input {
+    border: 2px solid $info;
+  }
+}
+
+@include mobile {
+  .img-gingembre {
+    background-position: center;
+  }
+  .img-n5 {
+    background-position: 15% center;
+  }
+  .img-detail {
+    height: 680px;
+    background-position: center 0;
+  }
+  .card-deck {
+    padding-left: 0;
+  }
+  .subscribe-img {
+    height: 220px;
+    background-position: 0 0;
+  }
+}
