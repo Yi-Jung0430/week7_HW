@@ -13,6 +13,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -28,8 +29,7 @@
         </h1>
         <a class="text-secondary d-inline-block d-md-none ml-auto mr-3 position-relative" href="#">
           <span class="material-icons">shopping_cart</span>
-          <span class="badge badge-pill badge-primary position-absolute pr-2"
-            style="top:-5px;right:-15px">3</span>
+          <span class="badge badge-pill badge-primary position-absolute pr-2" style="top:-5px;right:-15px">3</span>
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -136,21 +136,23 @@
 
 
 
-  <footer class="bg-primary py-4">
-    <div class="container d-flex">
-      <div class="d-flex align-items-center">
-        <a href="#">
-          <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfumewhite.png" alt="logo">
-        </a>
-        <p class="text-white font-size-sm ml-4">© 2020. All Rights Reserved.</p>
+    <footer class="bg-primary py-4">
+      <div class="container d-flex">
+        <div class="d-flex align-items-center">
+          <a href="#">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfumewhite.png"
+              alt="logo">
+          </a>
+          <p class="text-white font-size-sm ml-4">© 2020. All Rights Reserved.</p>
+        </div>
+        <ul class="nav ml-auto d-none d-md-flex">
+          <li class="nav-item"><a href="products.html" class="nav-link text-white h5">Product</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-white h5">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-white h5">Contact</a></li>
+        </ul>
       </div>
-      <ul class="nav ml-auto d-none d-md-flex"> 
-        <li class="nav-item"><a href="products.html" class="nav-link text-white h5">Product</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-white h5">Blog</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-white h5">Contact</a></li>
-      </ul>
-    </div>
-  </footer>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -163,6 +165,11 @@
       crossorigin="anonymous"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
